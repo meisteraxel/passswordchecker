@@ -7,7 +7,7 @@ import customtkinter
 #Set TK Window
 customtkinter.set_appearance_mode("System")
 app = customtkinter.CTk()
-app.geometry("800x500")
+app.geometry("800x300")
 app.title("Password Check")
 app.grid_columnconfigure(0, weight=1)
 
