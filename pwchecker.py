@@ -32,3 +32,14 @@ for character in password:
 
 if punctuation == True:
     print("Your password contains Punctuations.")
+
+#Atleast 8 Characters long
+lenght = False
+if len(password) > 8:
+    lenght = True
+else:
+    lenght = False
+
+if lenght == True:
+    print("Your password is at least 8 characters long.")
+
