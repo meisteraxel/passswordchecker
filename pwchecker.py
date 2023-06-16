@@ -82,7 +82,7 @@ def checkPassword():
 
 
 #Define Buttons/Labels
-label = customtkinter.CTkLabel(app, text="Password Checker - created by Axel", fg_color="transparent")
+label = customtkinter.CTkLabel(app, text="Passwordcheck - created by Axel", fg_color="transparent")
 label.grid(row=0, column=0, padx=20, pady=20)
 
 pwbox = customtkinter.CTkEntry(master=app, placeholder_text="Password")
