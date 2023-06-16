@@ -4,7 +4,7 @@ Building a Password-Check with an interactive GUI.:eyes:
 
 <div align="center">
   <kbd>
-    <img src="https://imgur.com/6cUJNHc.png" />
+    <img src="https://imgur.com/a/84HKBia.png" />
   </kbd>
 </div>
 
