@@ -16,7 +16,7 @@ app.grid_columnconfigure(0, weight=1)
 
 def checkPassword():
     password = pwbox.get()
-    print(password)
+    global score 
     score = 0
     
     lowercase = False
@@ -24,7 +24,6 @@ def checkPassword():
     punctuation = False
     number = False
     lenght = False
-    score = 0
 
     #Check for Characters
     for character in password:
@@ -61,10 +60,20 @@ def checkPassword():
     if lowercase and uppercase and number == True:
         score = score + 10
     if punctuation == True:
-        score = score + 5
+        score = score + 10
     if lenght == True:
-        score = score + 5
+        score = score + 10
 
+    #ProgressBar
+    if score <= 10:
+        progressbar.set(value=0.25)
+    elif score <= 20:
+        progressbar.set(value=0.5)
+    elif score <= 30:
+        progressbar.set(value=0.75)
+    elif score <= 40:
+        progressbar.set(value=1)
+    
     print("You achieved " + str(score) + "/30 points!")
 
 
@@ -77,5 +86,9 @@ pwbox.grid(row=1, column=0, padx=5, pady=5)
 
 analyze_button = customtkinter.CTkButton(app, text="Analyze PW", command=checkPassword)
 analyze_button.grid(row=2, column=0, padx=20, pady=20)
+
+progressbar = customtkinter.CTkProgressBar(app, width=250, height=30)
+progressbar.grid(row=3, column=0, padx=20, pady=50)
+progressbar.set(value=0)
 
 app.mainloop()
