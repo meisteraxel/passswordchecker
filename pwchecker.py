@@ -42,18 +42,6 @@ def checkPassword():
     else:
         lenght = False
 
-    """
-    if lowercase  == True:
-        print("Your password contains lowercase characters.")
-    if uppercase  == True:
-        print("Your password contains uppercase characters.")
-    if punctuation == True:
-        print("Your password contains Punctuations.")
-    if number == True:
-        print("Your password contains a number.")
-    if lenght == True:
-        print("Your password is at least 8 characters long.")
-    """
     #Score 
     if lowercase and uppercase == True:
         score = score + 10
@@ -78,7 +66,6 @@ def checkPassword():
         progressbar.set(value=1)
         progressbar.configure(progress_color="green")
     
-    #print("You achieved " + str(score) + "/30 points!")
 
 
 #Define Buttons/Labels
