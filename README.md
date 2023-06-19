@@ -5,15 +5,17 @@ Building a Password-Check with an interactive GUI.:eyes:
 
 - Simple UI 
 - Portable Windows Executable
+- Additional Web Application
 
 ### Install :electric_plug:
 
-- no Installation needed - just run the Executable and you are good to go!
+- no Installation needed - just run the Executable or use the Web Application and you are good to go!
 
 ### To-do :clipboard:
 
 - [ ] create MD5 Hash File
-- [ ] Update GUI
+- [x] Update GUI
+- [x] Create Web Application
 
 ### Legal disclaimer
 
